@@ -1,68 +1,127 @@
 # Vditor_for_Typecho
-Enhanced Markdown rendering for Typecho. Features include Mermaid, ECharts, KaTeX, code highlighting, theme switching, and copy/download buttons. Created by Codex.
 
-`Vditor_for_Typecho` 是一个 Typecho 插件，用于替换前台文章页的 Markdown 内容渲染样式，让 Typecho 原生 Markdown 在展示层获得更丰富的能力。
+A Typecho plugin that enhances frontend Markdown presentation with richer rendering and polished code blocks.  
+Supports Mermaid, ECharts, KaTeX, syntax highlighting, code block theme switching, and copy/download actions.  
+Created by Codex.
+
+`Vditor_for_Typecho` 是一个面向 Typecho 的前台渲染增强插件。  
+它不会接管后台编辑器，而是保留 Typecho 原有的 PHP Markdown 渲染流程，在前台文章页为 Markdown 内容补充更完整的展示能力和更现代的视觉样式。
 
 ## 功能概览
 
-插件会在前台注入 Vditor 渲染相关资源，并对 Markdown 内容进行增强，主要包括：
+插件当前提供的能力包括：
 
-- Vditor 内容主题（`light` / `wechat` / `ant-design` / `dark`）
-- Mermaid 图表渲染（流程图、时序图等）
-- ECharts 图表渲染（`lang-echarts` 代码块）
-- KaTeX 数学公式渲染（`$...$` 与 `$$...$$`）
-- highlight.js 语法高亮
-- 代码块工具栏：语言标识、复制按钮、下载按钮
-- 代码块视觉主题预设（Ice / Breeze / Sand / Forest / Midnight / Sunset）
+- 替换 Typecho 前台文章页的 Markdown 展示样式
+- Vditor 内容主题支持：
+  - `light`
+  - `wechat`
+  - `ant-design`
+  - `dark`
+- Mermaid 图表渲染：
+  - 流程图
+  - 时序图
+  - 甘特图
+  - 其他 Mermaid 支持的常见图表
+- ECharts 图表渲染：
+  - 通过 ```` ```echarts ```` 代码块渲染图表
+- KaTeX 数学公式渲染：
+  - 行内公式 `$...$`
+  - 块级公式 `$$...$$`
+- highlight.js 代码高亮
+- 代码块增强工具栏：
+  - 语言标签
+  - 复制按钮
+  - 下载按钮
+- 代码块主题风格切换
+- 后台代码块主题预览与切换
+
+## 设计思路
+
+本插件保持 Typecho 原有内容架构不变：
+
+- Markdown 仍由 Typecho 在服务端进行基础渲染
+- 插件只增强前台展示层
+- 不替换后台写作界面
+- 不强制改变现有主题的文章存储方式
+
+这意味着它更适合用于：
+
+- 已经在使用 Typecho Markdown 写作的站点
+- 希望增强文章页表现力，但不想重做后台编辑器的项目
+- 需要兼顾公式、图表、代码高亮与代码块美化的内容型网站
 
 ## 环境要求
 
-- Typecho（支持插件机制的版本）
+- Typecho
 - 文章内容使用 Markdown
-- 服务器可访问 CDN（默认使用 `unpkg.com` 拉取前端依赖资源）
+- 前台可以访问 CDN 资源
+  - 当前默认从 `unpkg.com` 加载前端依赖
 
 ## 安装方式
 
-### 方式一：手动下载并解压（推荐）
+### 手动安装
 
-1. 下载本仓库代码（`Code -> Download ZIP`）。
-2. 解压后，确保插件目录名为：`Vditor_for_Typecho`。
-3. 将该目录上传到 Typecho 插件目录：
+1. 确保插件目录名为：
+
+   ```text
+   Vditor_for_Typecho
    ```
+
+2. 将插件放入 Typecho 插件目录：
+
+   ```text
    /usr/plugins/Vditor_for_Typecho
    ```
-   > 也就是最终要保证 `Plugin.php` 位于：`/usr/plugins/Vditor_for_Typecho/Plugin.php`。
-4. 登录 Typecho 后台，进入：`控制台 -> 插件`。
-5. 找到 **Vditor_for_Typecho**，点击 **启用**。
-6. 启用后点击 **设置**，按需调整版本号、主题、代码块风格等参数并保存。
 
-### 方式二：使用 Git 拉取
+3. 确保主文件存在：
 
-在你的 Typecho 根目录执行（或在本地后上传）：
+   ```text
+   /usr/plugins/Vditor_for_Typecho/Plugin.php
+   ```
+
+4. 登录 Typecho 后台，进入：
+
+   ```text
+   控制台 -> 插件
+   ```
+
+5. 启用 `Vditor_for_Typecho`
+6. 启用后进入设置页，根据需要调整主题与版本配置
+
+### Git 安装
 
 ```bash
 git clone https://github.com/0LIE1/Vditor_for_Typecho.git ./usr/plugins/Vditor_for_Typecho
 ```
 
-然后在后台插件页启用并配置即可。
+然后到 Typecho 后台启用插件即可。
 
-## 配置说明
+## 配置项
 
-在插件设置页可配置以下内容：
+插件后台目前支持以下配置：
 
-- **Vditor 版本号**：默认 `3.11.2`
-- **内容主题**：`light` / `wechat` / `ant-design` / `dark`
-- **Mermaid 版本号**：默认 `10.9.1`
-- **ECharts 版本号**：默认 `5.5.1`
-- **KaTeX 版本号**：默认 `0.16.11`
-- **highlight.js 版本号**：默认 `11.11.1`
-- **代码块风格**：可视化主题卡片选择
+- **Vditor 版本号**
+- **内容主题**
+- **Mermaid 版本号**
+- **ECharts 版本号**
+- **KaTeX 版本号**
+- **highlight.js 版本号**
+- **代码块风格预设**
 
-> 建议在生产环境固定版本号，避免 CDN 最新版本升级导致渲染差异。
+当前内置代码块风格包括：
+
+- Ice
+- Breeze
+- Sand
+- Forest
+- Midnight
+- Sunset
+
+并提供后台预览卡片，方便直接切换。
 
 ## 使用示例
 
-### 1) Mermaid
+### Mermaid 流程图
 
 ````markdown
 ```mermaid
@@ -73,51 +132,115 @@ B -- 否 --> D[结束]
 ```
 ````
 
-### 2) ECharts
+### Mermaid 时序图
+
+````markdown
+```mermaid
+sequenceDiagram
+Alice->>Bob: Hello Bob
+Bob-->>Alice: Hi Alice
+```
+````
+
+### Mermaid 甘特图
+
+````markdown
+```mermaid
+gantt
+  title 项目开发流程
+  section 项目确定
+    需求分析 :a1, 2026-03-01, 3d
+    可行性报告 :after a1, 5d
+  section 项目实施
+    设计 :2026-03-10, 5d
+    编码 :2026-03-15, 7d
+```
+````
+
+### ECharts 图表
 
 ````markdown
 ```echarts
 {
   "xAxis": {"type": "category", "data": ["Mon", "Tue", "Wed", "Thu", "Fri"]},
   "yAxis": {"type": "value"},
-  "series": [{"type": "line", "data": [120, 200, 150, 80, 70]}]
+  "series": [{"type": "bar", "data": [120, 200, 150, 80, 70]}]
 }
 ```
 ````
 
-### 3) 数学公式
+### 数学公式
 
 ```markdown
 行内公式：$E=mc^2$
 
 块级公式：
+
 $$
-\int_0^1 x^2\,dx = \frac{1}{3}
+\int_0^1 x^2 dx = \frac{1}{3}
 $$
 ```
-## 🌟效果展示
-![效果展示](https://picui.ogmua.cn/s1/2026/03/11/69b149427d494.webp)
-![效果展示](https://picui.ogmua.cn/s1/2026/03/11/69b14aeaf19fd.webp)
+
+### 普通代码块
+
+````markdown
+```js
+const sum = (a, b) => a + b;
+console.log(sum(1, 2));
+```
+````
+
+前台会自动附加：
+
+- 语言标签
+- 复制按钮
+- 下载按钮
+- 主题化代码块外观
 
 ## 注意事项
 
-- 插件只在**前台**生效，不影响后台编辑界面。
-- 插件仅对 Markdown 文章内容进行包装渲染。
-- 若站点无法访问 `unpkg.com`，可能导致样式或图表不显示。
-- 如果主题中已对 Markdown 做了大量自定义样式，可能需要进一步微调 CSS。
+- 插件主要面向**前台文章页 Markdown 展示**
+- 不替换 Typecho 后台 Markdown 编辑器
+- 图表与样式资源当前默认通过 CDN 加载
+- 若站点无法访问 `unpkg.com`，可能导致：
+  - 图表不显示
+  - 公式不显示
+  - 代码高亮失效
+- 如果主题本身对文章内容样式改动较多，可能需要少量 CSS 微调
+- 宽图表（如甘特图）会优先保证内容完整，并允许横向滚动展示
 
-## 许可证
+## 适用场景
 
-本项目基于 `MIT License` 开源。
+`Vditor_for_Typecho` 适合以下类型站点：
 
-## 🌟 项目灵感与致敬
+- 技术博客
+- 文档站
+- 知识库
+- 教程类内容网站
+- 需要展示流程图、时序图、公式、代码片段的内容型博客
 
-本插件基于以下优秀的开源项目和作者的灵感开发：
+## 项目地址
 
-* 🎨 **博客美化方案**：[代码块美化示例](https://ygria.site/prettier-codeblock-demo/) —— 感谢 *Ygria* 提供的交互灵感。
-* 🚀 **Arya 编辑器**：[Arya 在线编辑器](https://markdown.lovejade.cn/) —— 感谢 *Lovejade* 提供的功能架构参考。
-* ♏ **核心引擎**：[Vditor](https://github.com/Vanessa219/vditor) —— 感谢 *Vanessa219* 开发的这款跨平台 Markdown 编辑器。
+- GitHub: [https://github.com/0LIE1/Vditor_for_Typecho](https://github.com/0LIE1/Vditor_for_Typecho)
 
+## 致谢
+
+本插件的实现参考和受益于以下优秀项目与灵感来源：
+
+- [Vditor](https://github.com/Vanessa219/vditor)
+- [ECharts](https://echarts.apache.org/)
+- [KaTeX](https://katex.org/)
+- [highlight.js](https://highlightjs.org/)
+- [代码块风格灵感示例](https://ygria.site/prettier-codeblock-demo/)
+- [Arya 在线编辑器](https://markdown.lovejade.cn/)
+
+## 作者
+
+- Codex
+
+## 🌟效果展示
+![效果展示](https://picui.ogmua.cn/s1/2026/03/11/69b149427d494.webp)
+![效果展示](https://picui.ogmua.cn/s1/2026/03/11/69b14aeaf19fd.webp)
 
 ## 沟通交流
 
