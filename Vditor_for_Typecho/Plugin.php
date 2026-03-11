@@ -328,7 +328,7 @@ HTML;
         echo '<link rel="stylesheet" href="' . htmlspecialchars($base . '/css/content-theme/' . $theme . '.css', ENT_QUOTES, 'UTF-8') . '">' . "\n";
         echo '<link rel="stylesheet" href="https://unpkg.com/katex@' . htmlspecialchars(rawurlencode($katexVersion), ENT_QUOTES, 'UTF-8') . '/dist/katex.min.css">' . "\n";
         echo '<link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@' . htmlspecialchars(rawurlencode($highlightVersion), ENT_QUOTES, 'UTF-8') . '/styles/' . htmlspecialchars($codeTheme['hljs'], ENT_QUOTES, 'UTF-8') . '.min.css">' . "\n";
-        echo '<style>:root{--vr-code-shell:' . htmlspecialchars($codeTheme['shell'], ENT_QUOTES, 'UTF-8') . ';--vr-code-toolbar:' . htmlspecialchars($codeTheme['toolbar'], ENT_QUOTES, 'UTF-8') . ';--vr-code-border:' . htmlspecialchars($codeTheme['border'], ENT_QUOTES, 'UTF-8') . ';--vr-code-text:' . htmlspecialchars($codeTheme['text'], ENT_QUOTES, 'UTF-8') . ';--vr-code-muted:' . htmlspecialchars($codeTheme['muted'], ENT_QUOTES, 'UTF-8') . ';--vr-code-button:' . htmlspecialchars($codeTheme['buttonBg'], ENT_QUOTES, 'UTF-8') . ';--vr-code-button-text:' . htmlspecialchars($codeTheme['buttonText'], ENT_QUOTES, 'UTF-8') . ';--vr-code-button-border:' . htmlspecialchars($codeTheme['buttonBorder'], ENT_QUOTES, 'UTF-8') . ';}.vditor-reset{padding:0;background:transparent}.vditor-reset table{display:table}.vditor-reset pre>code{white-space:pre}.vditor-reset img{max-width:100%;height:auto}.vditor-echarts{width:100%;min-height:420px;margin:1.5em 0;border-radius:12px;background:#fff}.vditor-mermaid{margin:1.5em 0;padding:1.1em 0;overflow:auto}.vditor-mermaid svg{display:block;margin:0 auto}.vditor-render-error{margin:1em 0;padding:12px 14px;border-radius:10px;background:#fff1f0;color:#cf1322;font-size:14px;line-height:1.6}.vditor-codeblock{margin:1.6em 0;border:1px solid var(--vr-code-border);border-radius:16px;overflow:hidden;background:var(--vr-code-shell);box-shadow:0 12px 30px rgba(20,29,51,.08)}.vditor-codeblock__toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 14px;background:var(--vr-code-toolbar);border-bottom:1px solid var(--vr-code-border)}.vditor-codeblock__label{font:600 12px/1.2 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--vr-code-muted)}.vditor-codeblock__actions{display:flex;gap:8px}.vditor-codeblock__button{padding:6px 10px;border:1px solid var(--vr-code-button-border);border-radius:999px;background:var(--vr-code-button);color:var(--vr-code-button-text);font:500 12px/1 system-ui,sans-serif;cursor:pointer;transition:.2s ease}.vditor-codeblock__button:hover{transform:translateY(-1px)}.vditor-codeblock pre{margin:0;background:transparent!important}.vditor-codeblock pre code.hljs{display:block;padding:1.15em 1.25em;border-radius:0;background:transparent!important;line-height:1.75;color:var(--vr-code-text)}</style>' . "\n";
+        echo '<style>:root{--vr-code-shell:' . htmlspecialchars($codeTheme['shell'], ENT_QUOTES, 'UTF-8') . ';--vr-code-toolbar:' . htmlspecialchars($codeTheme['toolbar'], ENT_QUOTES, 'UTF-8') . ';--vr-code-border:' . htmlspecialchars($codeTheme['border'], ENT_QUOTES, 'UTF-8') . ';--vr-code-text:' . htmlspecialchars($codeTheme['text'], ENT_QUOTES, 'UTF-8') . ';--vr-code-muted:' . htmlspecialchars($codeTheme['muted'], ENT_QUOTES, 'UTF-8') . ';--vr-code-button:' . htmlspecialchars($codeTheme['buttonBg'], ENT_QUOTES, 'UTF-8') . ';--vr-code-button-text:' . htmlspecialchars($codeTheme['buttonText'], ENT_QUOTES, 'UTF-8') . ';--vr-code-button-border:' . htmlspecialchars($codeTheme['buttonBorder'], ENT_QUOTES, 'UTF-8') . ';}.vditor-reset{padding:0;background:transparent}.vditor-reset table{display:table}.vditor-reset pre>code{white-space:pre}.vditor-reset img{max-width:100%;height:auto}.vditor-echarts{width:100%;min-height:420px;margin:1.5em 0;border-radius:12px;background:#fff}.vditor-mermaid{margin:1.5em 0;padding:1.1em 0;overflow:auto}.vditor-mermaid svg{display:block;width:auto!important;max-width:none!important;height:auto;margin:0 auto}.vditor-render-error{margin:1em 0;padding:12px 14px;border-radius:10px;background:#fff1f0;color:#cf1322;font-size:14px;line-height:1.6}.vditor-codeblock{margin:1.6em 0;border:1px solid var(--vr-code-border);border-radius:16px;overflow:hidden;background:var(--vr-code-shell);box-shadow:0 12px 30px rgba(20,29,51,.08)}.vditor-codeblock__toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 14px;background:var(--vr-code-toolbar);border-bottom:1px solid var(--vr-code-border)}.vditor-codeblock__label{font:600 12px/1.2 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--vr-code-muted)}.vditor-codeblock__actions{display:flex;gap:8px}.vditor-codeblock__button{padding:6px 10px;border:1px solid var(--vr-code-button-border);border-radius:999px;background:var(--vr-code-button);color:var(--vr-code-button-text);font:500 12px/1 system-ui,sans-serif;cursor:pointer;transition:.2s ease}.vditor-codeblock__button:hover{transform:translateY(-1px)}.vditor-codeblock pre{margin:0;background:transparent!important}.vditor-codeblock pre code.hljs{display:block;padding:1.15em 1.25em;border-radius:0;background:transparent!important;line-height:1.75;color:var(--vr-code-text)}</style>' . "\n";
         echo '<script src="https://unpkg.com/mermaid@' . htmlspecialchars(rawurlencode($mermaidVersion), ENT_QUOTES, 'UTF-8') . '/dist/mermaid.min.js"></script>' . "\n";
         echo '<script src="https://unpkg.com/echarts@' . htmlspecialchars(rawurlencode($echartsVersion), ENT_QUOTES, 'UTF-8') . '/dist/echarts.min.js"></script>' . "\n";
         echo '<script src="https://unpkg.com/@highlightjs/cdn-assets@' . htmlspecialchars(rawurlencode($highlightVersion), ENT_QUOTES, 'UTF-8') . '/highlight.min.js"></script>' . "\n";
@@ -367,6 +367,8 @@ HTML;
                 });
             } catch (e) {}
         }
+
+        var mermaidIndex = 0;
 
         roots.forEach(function (root) {
             root.querySelectorAll("pre > code").forEach(function (code) {
@@ -460,11 +462,26 @@ HTML;
                 var pre = code.parentNode;
                 var host = document.createElement("div");
                 host.className = "mermaid vditor-mermaid";
-                host.textContent = code.textContent;
                 pre.parentNode.replaceChild(host, pre);
-
-                if (window.mermaid && window.mermaid.run) {
-                    window.mermaid.run({nodes: [host]});
+                if (window.mermaid && window.mermaid.render) {
+                    var renderId = "vr-mermaid-" + (mermaidIndex++);
+                    window.mermaid.render(renderId, code.textContent).then(function (result) {
+                        host.innerHTML = result.svg;
+                        var svg = host.querySelector("svg");
+                        if (svg) {
+                            var viewBox = svg.getAttribute("viewBox");
+                            if (viewBox) {
+                                var parts = viewBox.split(/\s+/);
+                                if (parts.length === 4) {
+                                    svg.setAttribute("width", parts[2]);
+                                    svg.style.width = parts[2] + "px";
+                                    svg.style.maxWidth = "none";
+                                }
+                            }
+                        }
+                    }).catch(function (err) {
+                        host.replaceWith(errorBox("Mermaid 渲染失败：" + err.message));
+                    });
                 }
             });
 
