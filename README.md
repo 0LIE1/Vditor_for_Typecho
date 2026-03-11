@@ -106,3 +106,11 @@ $$
 ## 许可证
 
 本项目基于 `MIT License` 开源。
+
+## 🌟 项目灵感与致敬
+
+本插件基于以下优秀的开源项目和作者的灵感开发：
+
+* 🎨 **博客美化方案**：[代码块美化示例](https://ygria.site/prettier-codeblock-demo/) —— 感谢 *Ygria* 提供的交互灵感。
+* 🚀 **Arya 编辑器**：[Arya 在线编辑器](https://markdown.lovejade.cn/) —— 感谢 *Lovejade* 提供的功能架构参考。
+* ♏ **核心引擎**：[Vditor](https://github.com/Vanessa219/vditor) —— 感谢 *Vanessa219* 开发的这款跨平台 Markdown 编辑器。
