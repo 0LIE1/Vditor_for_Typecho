@@ -96,8 +96,8 @@ $$
 $$
 ```
 ## 🌟效果展示
-[img]https://picui.ogmua.cn/s1/2026/03/11/69b149427d494.webp[/img]
-[img]https://picui.ogmua.cn/s1/2026/03/11/69b14aeaf19fd.webp[/img]
+![效果展示](https://picui.ogmua.cn/s1/2026/03/11/69b149427d494.webp)
+![效果展示](https://picui.ogmua.cn/s1/2026/03/11/69b14aeaf19fd.webp)
 
 ## 注意事项
 
@@ -120,5 +120,5 @@ $$
 
 
 ## 沟通交流
-[img]https://picui.ogmua.cn/s1/2026/03/11/69b14bf8dd1e0.webp[/img]
 
+![沟通交流](https://picui.ogmua.cn/s1/2026/03/11/69b14bf8dd1e0.webp)
