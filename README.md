@@ -95,6 +95,9 @@ $$
 \int_0^1 x^2\,dx = \frac{1}{3}
 $$
 ```
+## 🌟效果展示
+[img]https://picui.ogmua.cn/s1/2026/03/11/69b149427d494.webp[/img]
+[img]https://picui.ogmua.cn/s1/2026/03/11/69b14aeaf19fd.webp[/img]
 
 ## 注意事项
 
@@ -114,3 +117,8 @@ $$
 * 🎨 **博客美化方案**：[代码块美化示例](https://ygria.site/prettier-codeblock-demo/) —— 感谢 *Ygria* 提供的交互灵感。
 * 🚀 **Arya 编辑器**：[Arya 在线编辑器](https://markdown.lovejade.cn/) —— 感谢 *Lovejade* 提供的功能架构参考。
 * ♏ **核心引擎**：[Vditor](https://github.com/Vanessa219/vditor) —— 感谢 *Vanessa219* 开发的这款跨平台 Markdown 编辑器。
+
+
+## 沟通交流
+[img]https://picui.ogmua.cn/s1/2026/03/11/69b14bf8dd1e0.webp[/img]
+
