@@ -328,7 +328,7 @@ HTML;
         echo '<link rel="stylesheet" href="' . htmlspecialchars($base . '/css/content-theme/' . $theme . '.css', ENT_QUOTES, 'UTF-8') . '">' . "\n";
         echo '<link rel="stylesheet" href="https://unpkg.com/katex@' . htmlspecialchars(rawurlencode($katexVersion), ENT_QUOTES, 'UTF-8') . '/dist/katex.min.css">' . "\n";
         echo '<link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@' . htmlspecialchars(rawurlencode($highlightVersion), ENT_QUOTES, 'UTF-8') . '/styles/' . htmlspecialchars($codeTheme['hljs'], ENT_QUOTES, 'UTF-8') . '.min.css">' . "\n";
-        echo '<style>:root{--vr-code-shell:' . htmlspecialchars($codeTheme['shell'], ENT_QUOTES, 'UTF-8') . ';--vr-code-toolbar:' . htmlspecialchars($codeTheme['toolbar'], ENT_QUOTES, 'UTF-8') . ';--vr-code-border:' . htmlspecialchars($codeTheme['border'], ENT_QUOTES, 'UTF-8') . ';--vr-code-text:' . htmlspecialchars($codeTheme['text'], ENT_QUOTES, 'UTF-8') . ';--vr-code-muted:' . htmlspecialchars($codeTheme['muted'], ENT_QUOTES, 'UTF-8') . ';--vr-code-button:' . htmlspecialchars($codeTheme['buttonBg'], ENT_QUOTES, 'UTF-8') . ';--vr-code-button-text:' . htmlspecialchars($codeTheme['buttonText'], ENT_QUOTES, 'UTF-8') . ';--vr-code-button-border:' . htmlspecialchars($codeTheme['buttonBorder'], ENT_QUOTES, 'UTF-8') . ';}.vditor-reset{padding:0;background:transparent}.vditor-reset table{display:table}.vditor-reset pre>code{white-space:pre}.vditor-reset img{max-width:100%;height:auto}.vditor-echarts{width:100%;min-height:420px;margin:1.5em 0;border-radius:12px;background:#fff}.vditor-mermaid{margin:1.5em 0;padding:1.1em 0;overflow:auto}.vditor-mermaid svg{display:block;width:auto!important;max-width:none!important;height:auto;margin:0 auto}.vditor-render-error{margin:1em 0;padding:12px 14px;border-radius:10px;background:#fff1f0;color:#cf1322;font-size:14px;line-height:1.6}.vditor-codeblock{margin:1.6em 0;border:1px solid var(--vr-code-border);border-radius:16px;overflow:hidden;background:var(--vr-code-shell);box-shadow:0 12px 30px rgba(20,29,51,.08)}.vditor-codeblock__toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 14px;background:var(--vr-code-toolbar);border-bottom:1px solid var(--vr-code-border)}.vditor-codeblock__label{font:600 12px/1.2 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--vr-code-muted)}.vditor-codeblock__actions{display:flex;gap:8px}.vditor-codeblock__button{padding:6px 10px;border:1px solid var(--vr-code-button-border);border-radius:999px;background:var(--vr-code-button);color:var(--vr-code-button-text);font:500 12px/1 system-ui,sans-serif;cursor:pointer;transition:.2s ease}.vditor-codeblock__button:hover{transform:translateY(-1px)}.vditor-codeblock pre{margin:0;background:transparent!important}.vditor-codeblock pre code.hljs{display:block;padding:1.15em 1.25em;border-radius:0;background:transparent!important;line-height:1.75;color:var(--vr-code-text)}</style>' . "\n";
+        echo '<style>:root{--vr-code-shell:' . htmlspecialchars($codeTheme['shell'], ENT_QUOTES, 'UTF-8') . ';--vr-code-toolbar:' . htmlspecialchars($codeTheme['toolbar'], ENT_QUOTES, 'UTF-8') . ';--vr-code-border:' . htmlspecialchars($codeTheme['border'], ENT_QUOTES, 'UTF-8') . ';--vr-code-text:' . htmlspecialchars($codeTheme['text'], ENT_QUOTES, 'UTF-8') . ';--vr-code-muted:' . htmlspecialchars($codeTheme['muted'], ENT_QUOTES, 'UTF-8') . ';--vr-code-button:' . htmlspecialchars($codeTheme['buttonBg'], ENT_QUOTES, 'UTF-8') . ';--vr-code-button-text:' . htmlspecialchars($codeTheme['buttonText'], ENT_QUOTES, 'UTF-8') . ';--vr-code-button-border:' . htmlspecialchars($codeTheme['buttonBorder'], ENT_QUOTES, 'UTF-8') . ';}.vditor-reset{padding:0;background:transparent}.vditor-reset table{display:table}.vditor-reset pre>code{white-space:pre}.vditor-reset img{max-width:100%;height:auto}.vditor-reset .vditor-taskblock{margin:1.6em 0;border:1px solid var(--vr-code-border);border-radius:16px;overflow:hidden;background:linear-gradient(180deg,var(--vr-code-shell) 0%,#fff 100%);box-shadow:0 12px 30px rgba(20,29,51,.08)}.vditor-reset .vditor-taskblock__toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 14px;background:var(--vr-code-toolbar);border-bottom:1px solid var(--vr-code-border)}.vditor-reset .vditor-taskblock__label{font:600 12px/1.2 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--vr-code-muted)}.vditor-reset .vditor-taskblock__meta{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border:1px solid var(--vr-code-button-border);border-radius:999px;background:var(--vr-code-button);color:var(--vr-code-button-text);font:500 12px/1 system-ui,sans-serif}.vditor-reset .vditor-taskblock__body{padding:14px 16px 16px}.vditor-reset .vditor-task-list{margin:0;padding-left:0;list-style:none}.vditor-reset .vditor-task-list .vditor-task-list{margin-top:.55em;margin-left:1.9em;padding-top:.15em}.vditor-reset .vditor-task-list-item{display:flex;align-items:flex-start;gap:.7em;padding:.55em .1em;border-radius:12px}.vditor-reset .vditor-task-list-item + .vditor-task-list-item{margin-top:.15em}.vditor-reset .vditor-task-list-item p{margin:0}.vditor-reset .vditor-task-list-item__checkbox{position:relative;display:inline-flex;align-items:center;justify-content:center;width:1.1rem;height:1.1rem;margin:.18em 0 0;flex:0 0 1.1rem;border:1.5px solid #94a3b8;border-radius:.35rem;background:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.7);cursor:default}.vditor-reset .vditor-task-list-item__checkbox::after{content:"";width:.3rem;height:.58rem;border-right:2px solid transparent;border-bottom:2px solid transparent;transform:translateY(-.06rem) rotate(45deg)}.vditor-reset .vditor-task-list-item__checkbox--checked{border-color:#3b82f6;background:linear-gradient(180deg,#60a5fa 0%,#3b82f6 100%);box-shadow:0 6px 14px rgba(59,130,246,.18)}.vditor-reset .vditor-task-list-item__checkbox--checked::after{border-color:#fff}.vditor-reset .vditor-task-list-item--checked{background:rgba(59,130,246,.06)}.vditor-reset .vditor-task-list-item--checked > :not(.vditor-task-list-item__checkbox){opacity:.72}.vditor-reset .vditor-task-list-item--checked > p,.vditor-reset .vditor-task-list-item--checked > span,.vditor-reset .vditor-task-list-item--checked > div:first-of-type{text-decoration:line-through;text-decoration-thickness:1.5px}.vditor-echarts{width:100%;min-height:420px;margin:1.5em 0;border-radius:12px;background:#fff}.vditor-mermaid{margin:1.5em 0;padding:1.1em 0;overflow:auto}.vditor-mermaid svg{display:block;width:auto!important;max-width:none!important;height:auto;margin:0 auto}.vditor-render-error{margin:1em 0;padding:12px 14px;border-radius:10px;background:#fff1f0;color:#cf1322;font-size:14px;line-height:1.6}.vditor-codeblock{margin:1.6em 0;border:1px solid var(--vr-code-border);border-radius:16px;overflow:hidden;background:var(--vr-code-shell);box-shadow:0 12px 30px rgba(20,29,51,.08)}.vditor-codeblock__toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 14px;background:var(--vr-code-toolbar);border-bottom:1px solid var(--vr-code-border)}.vditor-codeblock__label{font:600 12px/1.2 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--vr-code-muted)}.vditor-codeblock__actions{display:flex;gap:8px}.vditor-codeblock__button{padding:6px 10px;border:1px solid var(--vr-code-button-border);border-radius:999px;background:var(--vr-code-button);color:var(--vr-code-button-text);font:500 12px/1 system-ui,sans-serif;cursor:pointer;transition:.2s ease}.vditor-codeblock__button:hover{transform:translateY(-1px)}.vditor-codeblock pre{margin:0;background:transparent!important}.vditor-codeblock pre code.hljs{display:block;padding:1.15em 1.25em;border-radius:0;background:transparent!important;line-height:1.75;color:var(--vr-code-text)}</style>' . "\n";
         echo '<script src="https://unpkg.com/mermaid@' . htmlspecialchars(rawurlencode($mermaidVersion), ENT_QUOTES, 'UTF-8') . '/dist/mermaid.min.js"></script>' . "\n";
         echo '<script src="https://unpkg.com/echarts@' . htmlspecialchars(rawurlencode($echartsVersion), ENT_QUOTES, 'UTF-8') . '/dist/echarts.min.js"></script>' . "\n";
         echo '<script src="https://unpkg.com/@highlightjs/cdn-assets@' . htmlspecialchars(rawurlencode($highlightVersion), ENT_QUOTES, 'UTF-8') . '/highlight.min.js"></script>' . "\n";
@@ -337,6 +337,131 @@ HTML;
         echo <<<'SCRIPT'
 <script>
 (function () {
+    function detectTaskMarker(node) {
+        if (!node) {
+            return null;
+        }
+
+        var match = node.textContent.match(/^\s*\[([ xX])\]\s+/);
+        if (!match) {
+            return null;
+        }
+
+        node.textContent = node.textContent.replace(/^\s*\[[ xX]\]\s+/, "");
+        return {
+            checked: match[1].toLowerCase() === "x"
+        };
+    }
+
+    function convertTaskLists(root) {
+        root.querySelectorAll("li").forEach(function (item) {
+            if (item.classList.contains("vditor-task-list-item")) {
+                return;
+            }
+
+            var firstMeaningful = null;
+            Array.prototype.some.call(item.childNodes, function (node) {
+                if (node.nodeType === Node.TEXT_NODE && node.textContent.trim() === "") {
+                    return false;
+                }
+
+                firstMeaningful = node;
+                return true;
+            });
+
+            if (!firstMeaningful) {
+                return;
+            }
+
+            var marker = null;
+            var checkboxHost = item;
+
+            if (firstMeaningful.nodeType === Node.TEXT_NODE) {
+                marker = detectTaskMarker(firstMeaningful);
+            } else if (firstMeaningful.nodeType === Node.ELEMENT_NODE && firstMeaningful.tagName === "P") {
+                checkboxHost = firstMeaningful;
+                Array.prototype.some.call(firstMeaningful.childNodes, function (node) {
+                    if (node.nodeType === Node.TEXT_NODE && node.textContent.trim() === "") {
+                        return false;
+                    }
+
+                    if (node.nodeType === Node.TEXT_NODE) {
+                        marker = detectTaskMarker(node);
+                    }
+
+                    return true;
+                });
+            }
+
+            if (!marker) {
+                return;
+            }
+
+            var checkbox = document.createElement("span");
+            checkbox.setAttribute("aria-hidden", "true");
+            checkbox.className = "vditor-task-list-item__checkbox";
+            checkbox.classList.toggle("vditor-task-list-item__checkbox--checked", marker.checked);
+
+            item.classList.add("vditor-task-list-item");
+            item.classList.toggle("vditor-task-list-item--checked", marker.checked);
+
+            if (item.parentElement) {
+                item.parentElement.classList.add("vditor-task-list");
+            }
+
+            checkboxHost.insertBefore(checkbox, checkboxHost.firstChild);
+        });
+    }
+
+    function wrapTaskBlocks(root) {
+        root.querySelectorAll("ul.vditor-task-list").forEach(function (list) {
+            if (list.closest(".vditor-taskblock")) {
+                return;
+            }
+
+            if (list.parentElement && list.parentElement.closest("li.vditor-task-list-item")) {
+                return;
+            }
+
+            var items = list.querySelectorAll(":scope > li.vditor-task-list-item");
+            if (!items.length) {
+                return;
+            }
+
+            var checkedCount = 0;
+            items.forEach(function (item) {
+                if (item.classList.contains("vditor-task-list-item--checked")) {
+                    checkedCount += 1;
+                }
+            });
+
+            var wrapper = document.createElement("div");
+            wrapper.className = "vditor-taskblock";
+
+            var toolbar = document.createElement("div");
+            toolbar.className = "vditor-taskblock__toolbar";
+
+            var label = document.createElement("span");
+            label.className = "vditor-taskblock__label";
+            label.textContent = "TASK LIST";
+
+            var meta = document.createElement("span");
+            meta.className = "vditor-taskblock__meta";
+            meta.textContent = checkedCount + "/" + items.length + " completed";
+
+            var body = document.createElement("div");
+            body.className = "vditor-taskblock__body";
+
+            toolbar.appendChild(label);
+            toolbar.appendChild(meta);
+            wrapper.appendChild(toolbar);
+
+            list.parentNode.insertBefore(wrapper, list);
+            wrapper.appendChild(body);
+            body.appendChild(list);
+        });
+    }
+
     function ready(fn) {
         if (document.readyState !== "loading") {
             fn();
@@ -371,6 +496,9 @@ HTML;
         var mermaidIndex = 0;
 
         roots.forEach(function (root) {
+            convertTaskLists(root);
+            wrapTaskBlocks(root);
+
             root.querySelectorAll("pre > code").forEach(function (code) {
                 if (code.classList.contains("lang-mermaid") || code.classList.contains("lang-echarts")) {
                     return;
